@@ -275,7 +275,7 @@ The updated component:
 import React, { useState } from 'react'
 import { v4 as uuid } from 'uuid'
 
-function AddTransactionForm() {
+function AddTransactionForm({ onAddTransaction }) {
   const [description, setDescription] = useState('')
   const [amount, setAmount] = useState('')
   const [date, setDate] = useState('')
@@ -314,7 +314,9 @@ function AddTransactionForm() {
       body: JSON.stringify(newTransaction),
     })
       .then((resp) => resp.json())
-      .then((createdTransaction) => console.log(createdTransaction))
+      .then((createdTransaction) => {
+        onAddTransaction(createdTransaction)
+      })
   }
 
   return (
@@ -487,7 +489,7 @@ function AccountContainer() {
   return (
     <div>
       <Search search={searchItem} onSearchChange={searchFilteredItems} />
-      <AddTransactionForm />
+      <AddTransactionForm onAddTransaction={handleAddTransaction} />
       <TransactionsList transaction={displaySearchItems} />
     </div>
   )

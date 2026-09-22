@@ -1,6 +1,6 @@
 ---
-title: "Using Hashnode API in a NextJS App"
-seoTitle: "Using Hashnode API in a NextJS App"
+title: "Using Hashnode API in a NextJS App (Legacy Hashnode API Walkthrough)"
+seoTitle: "Using Hashnode API in a NextJS App (Legacy Hashnode API Walkthrough)"
 seoDescription: "How To Display your Hashnode Posts on a NextJS website, and using graphQL in fetching data"
 datePublished: Wed Jun 16 2021 09:03:18 GMT+0000 (Coordinated Universal Time)
 cuid: ckpz8yerg00estbs1apit218q
@@ -34,9 +34,9 @@ I will be using [Apollo graphQL](https://www.apollographql.com/) to help queryin
 
 ## Hashnode API
 
-Hashnode's API uses GraphQL, and the current endpoint for queries is `https://gql.hashnode.com/`. You can explore the schema and examples in the official Hashnode API docs.
+This article was originally written against Hashnode's older GraphQL playground endpoint and schema. If you are building a new integration today, use the current Hashnode GraphQL docs and endpoint linked below, and adapt the legacy query examples in this tutorial accordingly.
 
-[Hashnode GraphQL endpoint](https://gql.hashnode.com/)
+[Current Hashnode GraphQL endpoint](https://gql.hashnode.com/)
 
 [Hashnode API docs](https://apidocs.hashnode.com/)
 
@@ -278,7 +278,7 @@ Inside the top of the getStaticProps() function, let's create an instance of apo
 
 ```JavaScript
   const client = new ApolloClient({
-    uri: 'https://gql.hashnode.com/',
+    uri: 'https://api.hashnode.com/',
     cache: new InMemoryCache(),
   })
 ```
@@ -288,7 +288,7 @@ Our getStaticProps() function should now be like:
 ```JavaScript
 export async function getStaticProps(context) {
   const client = new ApolloClient({
-    uri: 'https://gql.hashnode.com/',
+    uri: 'https://api.hashnode.com/',
     cache: new InMemoryCache(),
   })
 
