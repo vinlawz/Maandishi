@@ -48,6 +48,8 @@ To learn more about queries for fetching data can be found in the docs drawer on
 
 Let's test out some queries for getting your blog post publications:
 
+Legacy query example (kept here for historical reference to the original article's schema):
+
 ```query
 {
   user(username: "chrisdevcode") {

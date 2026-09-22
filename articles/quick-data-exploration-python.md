@@ -88,9 +88,10 @@ airports.dtypes
 Other tricks you could use are:
 
 ```python
-x.rows
+x.shape
+x.index
 x.info()
 x.describe()
-x.unique()
+x['column_name'].unique()
 x.describe()
 ```

@@ -246,7 +246,7 @@ First I install `uuid` to assign a unique ID to every transaction added.
 Then used state hooks to capture values, and create an event handler to send the data to the API once the form is submitted:
 
 ```js
-  const handleChange = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     const newTransaction = {
       id: uuid(),
@@ -321,7 +321,7 @@ function AddTransactionForm({ onAddTransaction }) {
 
   return (
     <div className='ui segment'>
-      <form className='ui form' onSubmit={handleChange}>
+      <form className='ui form' onSubmit={handleSubmit}>
         <div className='inline fields'>
           <input
             type='date'

@@ -109,6 +109,8 @@ const Layout = ({children}) => {
  )
 }
 
+export default Layout
+
 ```
 
 ## Using the Layout Component

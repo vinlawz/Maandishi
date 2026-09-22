@@ -93,7 +93,7 @@ _base.html
 
 ```html
 <!DOCTYPE html>
-<!-- {% load static %} -->
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -144,11 +144,10 @@ landingPage.html
 
 ```html
 {% extends 'myapp/_base.html' %}
-<!-- {% load static %} -->
 {% block content %}
-<h class="mt-6">
+<h1 class="mt-6">
     LANDING PAGE
-</h>
+</h1>
 {% endblock content %}
 about.html
 
