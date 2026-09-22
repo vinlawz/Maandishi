@@ -99,10 +99,10 @@ Once the project has been copied to your computer, the next steps are practical 
 1. Enter the project directory:
 
    ```bash
-   cd repository
+   cd Maandishi
    ```
 
-   Replace `repository` with the folder name that was created on your computer.
+   If you cloned a different project, replace `Maandishi` with the folder name that was created on your computer.
 
 2. Read the `README`.
 
