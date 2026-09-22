@@ -29,13 +29,10 @@ So I used two endpoints, one to get the general summary statistics and the other
 #### Summary
 
 ```js
-//  fetching data starts here ...
-fetch('https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php', {
+// Fetch data from your own backend or serverless endpoint.
+// Keep the RapidAPI key on the server, not in browser-delivered code.
+fetch('/api/worldstat', {
   method: 'GET',
-  headers: {
-    'x-rapidapi-host': 'coronavirus-monitor.p.rapidapi.com',
-    'x-rapidapi-key': 'api_key',
-  },
 })
   .then((response) =>
     response.json().then((data) => {
@@ -47,27 +44,20 @@ fetch('https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php', {
   })
 ```
 
-The code snippet above fetched data from the URL provided:
+The code snippet above fetches data from an endpoint you control on the server side:
 
 ```txt
-https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php
+/api/worldstat
 ```
-The Headers interface of the Fetch API allows you to perform various actions on HTTP request and response headers.
+Your server-side route can then call the third-party RapidAPI endpoint with the required headers and keep the API key out of public frontend code.
 
 #### Country Data
 
 ```js
-//Fetching The Case by Country Data
-fetch(
-  'https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_country.php',
-  {
-    method: 'GET',
-    headers: {
-      'x-rapidapi-host': 'coronavirus-monitor.p.rapidapi.com',
-      'x-rapidapi-key': 'api_key',
-    },
-  }
-)
+// Fetch the country data through your own backend or serverless endpoint.
+fetch('/api/cases-by-country', {
+  method: 'GET',
+})
   .then((response) =>
     response.json().then((data) => {
       // console.log(data)
@@ -83,11 +73,13 @@ fetch(
   })
 ````
 
-Data is fetched from the URL:
+Data is fetched from the backend endpoint:
 
 ```txt
-https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_country.php
+/api/cases-by-country
 ```
+
+Just like the previous example, the third-party API key should stay in your backend or serverless function instead of being exposed in frontend JavaScript.
 
 ## Displaying Data:
 

@@ -256,7 +256,7 @@ Then used state hooks to capture values, and create an event handler to send the
       body: JSON.stringify(newTransaction),
     })
       .then((resp) => resp.json())
-      .then((newQuestion) => console.log(newQuestion))
+      .then((createdTransaction) => console.log(createdTransaction))
   }
 ```
 
@@ -305,7 +305,7 @@ function AddTransactionForm() {
       body: JSON.stringify(newTransaction),
     })
       .then((resp) => resp.json())
-      .then((newQuestion) => console.log(newQuestion))
+      .then((createdTransaction) => console.log(createdTransaction))
   }
 
   return (

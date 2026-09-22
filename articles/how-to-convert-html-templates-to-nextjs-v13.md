@@ -41,7 +41,7 @@ To start a new project, open up a command line application and run the script:
 
 *Note:* `my-portfolio` *can be replaced with the name of the project.*
 
-Note that we get some prompts for Next.JS configuration:
+Note that we get some prompts for Next.JS configuration. The wording below came from an earlier `create-next-app` release, where the `app/` directory was still labeled as experimental:
 
 ```bash
     ✔ Would you like to use TypeScript with this project? … No / Yes
