@@ -22,7 +22,7 @@ Before you begin, make sure you have:
 - A GitHub project you want to copy
 - A **terminal**, which is the application where you type commands. On Windows, you might use Command Prompt, PowerShell, or Windows Terminal. On macOS and Linux, you can use Terminal.
 - The **GitHub CLI**, which is GitHub's command-line tool for working with repositories and other GitHub features. You can install it from [https://cli.github.com/](https://cli.github.com/).
-- Optionally, **Git**, which is another tool for working with repositories. You can use it if you want to clone a project over HTTPS instead of using GitHub CLI.
+- **Git**, if you want to use the HTTPS cloning method instead of GitHub CLI. Git is another tool for working with repositories, and it is required for the `git clone` option shown later in this tutorial.
 
 ## What these terms mean
 
