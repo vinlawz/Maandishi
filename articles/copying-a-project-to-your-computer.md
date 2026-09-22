@@ -30,11 +30,7 @@ Reading code on your own computer is often much easier than reading it through a
 
 GitHub has a companion tool called **GitHub CLI**. "CLI" means **Command-Line Interface**, which is just a formal way of saying you type commands into your terminal instead of clicking through menus.
 
-If you do not have it yet, install it from the official GitHub CLI website:
-
-[https://cli.github.com/](https://cli.github.com/)
-
-It is available for Windows, macOS, and Linux.
+We will use it in a moment, and it is available for Windows, macOS, and Linux.
 
 I know typing commands can feel intimidating at first. I felt that too. But once you do it a few times, it starts to feel less mysterious and more practical.
 
