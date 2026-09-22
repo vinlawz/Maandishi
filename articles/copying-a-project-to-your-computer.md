@@ -128,7 +128,7 @@ Then open a new terminal window and try the command again.
 
 ### Permission or private repository problems
 
-If the repository is private, you may need to sign in and make sure your account has access. If you are using GitHub CLI, you may need to authenticate first. If you are using Git over HTTPS, you may be prompted for credentials depending on your setup.
+If the repository is private, make sure your account has access to it. If you are using GitHub CLI, sign in by running `gh auth login` and follow the prompts before trying to clone again. If you are using Git over HTTPS, you may be prompted for credentials depending on your setup.
 
 ### The destination folder already exists
 
