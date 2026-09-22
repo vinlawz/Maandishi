@@ -174,7 +174,7 @@ export default function Home() {
 
 I will be using third parties to fetch data from the hashnode API using graphQL.
 
-NextJS provides built-in data fetching methods, I will be using `getStaticProps`"
+NextJS provides built-in data fetching methods, and in this example I will use `getStaticProps`.
 
 ```JavaScript
 export async function getStaticProps(context) {

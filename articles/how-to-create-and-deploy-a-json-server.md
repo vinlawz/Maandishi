@@ -25,19 +25,18 @@ npm init -y
 Once that is complete, you install the following packages:
 
 - `json-server`
-- `json-serve`
 - `cors`
 - `nodemon` (as a dev dependency)
 
 ```shell
-npm install json-server json-serve cors
+npm install json-server cors
 ```
 
 ```shell
 npm install -D nodemon
 ```
 
-After the installation, create a new file: `index.js`. This is the entry point for the json-serve. Add the following inside the file:
+After the installation, create a new file: `index.js`. This is the entry point for the json-server setup. Add the following inside the file:
 
 ```js
 const jsonServer = require('json-server')

@@ -134,50 +134,47 @@ The default `_document.js` file has the following content:
     }
 ```
 
-To add the script, we add the following inside the body tag:
+For application scripts in Next.js, prefer the `Script` component from `next/script` in your page or layout instead of dropping raw `<script>` tags into the custom document body:
 
 ```js
-    {/* Custom JS files */}
-    <script
-    async
-    src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
-    ></script>
-    {/* theme js */}
-    <script async src='/js/scripts.js'></script>
-    {/* startbootstrap forms */}
-    <script
-    async
-    src='https://cdn.startbootstrap.com/sb-forms-latest.js'
-    ></script>
+import Script from 'next/script'
+
+<Script
+  src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
+  strategy='afterInteractive'
+/>
+<Script src='/js/scripts.js' strategy='afterInteractive' />
+<Script
+  src='https://cdn.startbootstrap.com/sb-forms-latest.js'
+  strategy='afterInteractive'
+/>
 ```
 
-The updated file will now contain:
+A page-level example would now look like this:
 
 ```jsx
-    import { Html, Head, Main, NextScript } from 'next/document'
-    export default function Document() {
-      return (
-        <Html lang='en'>
-          <Head />
-          <body>
-            <Main />
-            <NextScript />
-            {/* Custom JS files */}
-            <script
-              async
-              src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
-            ></script>
-            {/* theme js */}
-            <script async src='/js/scripts.js'></script>
-            {/* startbootstrap forms */}
-            <script
-              async
-              src='https://cdn.startbootstrap.com/sb-forms-latest.js'
-            ></script>
-          </body>
-        </Html>
-      )
-    }
+import Head from 'next/head'
+import Script from 'next/script'
+
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>My portfolio</title>
+      </Head>
+      <main>{/* page content */}</main>
+      <Script
+        src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
+        strategy='afterInteractive'
+      />
+      <Script src='/js/scripts.js' strategy='afterInteractive' />
+      <Script
+        src='https://cdn.startbootstrap.com/sb-forms-latest.js'
+        strategy='afterInteractive'
+      />
+    </>
+  )
+}
 ```
 
 Follow along with the [commit](https://github.com/achingachris/convert-html-to-nextjs/commit/4ad099d45f81d64972405e482ba7f578f152a808)

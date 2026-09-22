@@ -87,10 +87,7 @@ import mongoose from "mongoose";
 
 const connectDB = async () => {
     try {
-        const conn = await mongoose.connect(process.env.MONGO_URI, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        });
+        const conn = await mongoose.connect(process.env.MONGO_URI);
     
         console.log(`MongoDB connected: ${conn.connection.host}`);
     } catch (error) {
@@ -110,19 +107,17 @@ The purpose of the connectDB function is to connect to a MongoDB database using 
     
 3. `**try { ... } catch (error) { ... }**`: Use a try-catch block to handle any errors while connecting to the MongoDB database.
     
-4. `**const conn = await mongoose.connect(process.env.MONGO_URI, { ... });**`: Inside the try block, call the `**mongoose.connect()**` method with the connection string stored in the `**MONGO_URI**` environment variable. This is an asynchronous operation, so you use the `**await**` keyword to wait for the connection to be established. The `**connect()**` method returns a connection object, which is stored in the `**conn**` constant.
+4. `**const conn = await mongoose.connect(process.env.MONGO_URI);**`: Inside the try block, call the `**mongoose.connect()**` method with the connection string stored in the `**MONGO_URI**` environment variable. This is an asynchronous operation, so you use the `**await**` keyword to wait for the connection to be established. The `**connect()**` method returns a connection object, which is stored in the `**conn**` constant.
     
-5. `**useNewUrlParser: true, useUnifiedTopology: true,**`: These options are passed to the `**mongoose.connect()**` method to enable the new URL parser and the unified topology in the MongoDB driver. The new URL parser is less strict and more efficient, while the unified topology provides better support for various MongoDB deployment topologies.
+5. `**console.log(**`**MongoDB connected: ${**[**conn.connection.host**](http://conn.connection.host)**}**`**);**`: If the connection is successful, log a message to the console with the host information.
     
-6. `**console.log(**`**MongoDB connected: ${**[**conn.connection.host**](http://conn.connection.host)**}**`**);**`: If the connection is successful, log a message to the console with the host information.
+6. `**catch (error) { ... }**`The catch block will be executed if an error occurs during the connection attempt.
     
-7. `**catch (error) { ... }**`The catch block will be executed if an error occurs during the connection attempt.
+7. `**console.error(**`**Error: ${error.message}**`**);**`: Log the error message to the console.
     
-8. `**console.error(**`**Error: ${error.message}**`**);**`: Log the error message to the console.
+8. `**process.exit(1);**`: Terminate the Node.js process with an exit code of 1, indicating that an error occurred.
     
-9. `**process.exit(1);**`: Terminate the Node.js process with an exit code of 1, indicating that an error occurred.
-    
-10. `**export default connectDB;**`: Export the `**connectDB**` function as the default export of this module. This allows you to import and use the `**connectDB**` function in other parts of your application.
+9. `**export default connectDB;**`: Export the `**connectDB**` function as the default export of this module. This allows you to import and use the `**connectDB**` function in other parts of your application.
     
 
 To use this module, you'll need to import it and call the `**connectDB()**` function in the main entry point of your application. Also, set the `**MONGO_URI**` environment variable to the appropriate connection string for your MongoDB instance.

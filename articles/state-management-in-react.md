@@ -26,7 +26,7 @@ This post will take you through creating an initial state and an event to trigge
 # create a new react app
 npx create-react-app state-management-demo
 # move into the new app's directory
-cd  state management-demo
+cd state-management-demo
 # start the app to see if everything is okay
 npm start
 ```

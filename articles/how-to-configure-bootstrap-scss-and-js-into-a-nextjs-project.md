@@ -55,7 +55,7 @@ The updated file:
     }
     export default MyApp
 
-To test for a successful setup, edit `pages/app.js` to the following:
+To test for a successful setup, edit `pages/index.js` to the following:
 
     import Head from 'next/head'
     export default function Home() {
@@ -99,6 +99,8 @@ After that, you need to add the path to where the `.scss` files are. Add the fol
 
 The updated `next.config.js` file:
 
+    const path = require('path')
+
     module.exports = {
       reactStrictMode: true,
       sassOptions: {
@@ -122,7 +124,7 @@ Next, inside the styles directory, create a new scss file: `customBootstrap.scss
 
 By using `$theme-colors` you override bootstrap default values. 
 
-To render the new changes, you update the import statement in `pages/app.js`:
+To render the new changes, update the import statement in `pages/_app.js`:
 
     import '../styles/customBootstrap.scss'
     import '../styles/globals.css'

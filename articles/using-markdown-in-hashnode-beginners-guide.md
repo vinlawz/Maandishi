@@ -171,7 +171,7 @@ print("Hello World")
 console.log("Hello World")
 ```
 
-#### Syntax Highlitings:
+#### Syntax Highlighting:
 
 To enable syntax highlighting in code blocks, all you have to do is add the language name after the first/top triple grave accent keys:
 

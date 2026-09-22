@@ -137,7 +137,7 @@ After you have added an entry, and saved it, you have to publish it.
 
 You may have a client side site that you'd want to show the blog or the content from your cms, Strapi has a built in api that lets you do that, after all that's the main point, aint it...
 
-By default, strapi runs on port 1337 on your localhost. to acces the api, you use the url: http://localhost:1337/<content-Type-Name> 
+By default, strapi runs on port 1337 on your localhost. to access the API, you use the url: http://localhost:1337/<content-Type-Name> 
 
 In my demo: http://localhost:1337/blog-entries
 

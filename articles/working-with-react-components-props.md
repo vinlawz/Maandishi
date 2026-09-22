@@ -108,7 +108,7 @@ const Header = ({ title, description }) => {
 }
 ```
 
-## Defualt Prop values:
+## Default Prop values:
 
 [Documentation - Declaring default props](https://reactjs.org/docs/react-without-es6.html#declaring-default-props)
 
@@ -119,7 +119,7 @@ To do that you simply add:
 ```js
 Header.defaultProps = {
   title: 'Page Title',
-  description: 'A defualt description',
+  description: 'A default description',
 }
 ```
 
@@ -129,7 +129,7 @@ This will ensure that your components always have data passed in incase somethin
 
 > As your app grows, you can catch a lot of bugs with type-checking.
 
-[Documentations - Typechecking with prototypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
+[Documentation - Typechecking with PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 
 To perform this, you have to import prop-type into your components.
 
