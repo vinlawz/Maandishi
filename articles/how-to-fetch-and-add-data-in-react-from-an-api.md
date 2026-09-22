@@ -297,7 +297,7 @@ function AddTransactionForm({ onAddTransaction }) {
     setCategory(event.target.value)
   }
 
-  const handleChange = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     const newTransaction = {
       id: uuid(),

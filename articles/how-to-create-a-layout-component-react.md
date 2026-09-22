@@ -94,23 +94,21 @@ const Layout = ({ children }) => {
 export default Layout
 ```
 
-```JavaScript
+```jsx
+import Navigation from './Navigation'
+import Footer from './Footer'
 
-import NavigationBar from '../components/NavigationBar'
-import Footer from '../components/Footer'
-
-const Layout = ({children}) => {
- return (
-  <div>
-    <NavigationBar />
-    {children}
-    <Footer />
-  </div>
- )
+const Layout = ({ children }) => {
+  return (
+    <>
+      <Navigation />
+      <main>{children}</main>
+      <Footer />
+    </>
+  )
 }
 
 export default Layout
-
 ```
 
 ## Using the Layout Component

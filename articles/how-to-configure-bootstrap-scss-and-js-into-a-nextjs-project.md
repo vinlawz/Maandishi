@@ -144,21 +144,25 @@ One more thing…
 
 ## Using Bootstrap JS
 
-There are a number of ways to add Bootstrap JS scripts to a NextJS application. For this article, you will use the simplest and most effective way, using the `useEffect` hook. 
+There are a number of ways to add Bootstrap JS scripts to a NextJS application. For this article, load the Bootstrap bundle on the page where you need the interactive component by using Next.js `Script`.
 
-To do that, you will edit the `pages``/``**_app.js**` file to:
+To do that, update the page component that renders your Bootstrap modal:
 
-    import { useEffect } from 'react'
-    import '../styles/customBootstrap.scss'
-    import '../styles/globals.css'
-    function MyApp({ Component, pageProps }) {
-      useEffect(() => {
-        import('bootstrap/dist/js/bootstrap')
-      }, [])
-      
-      return <Component {...pageProps} />
+    import Head from 'next/head'
+    import Script from 'next/script'
+    export default function Home() {
+      return (
+        <>
+          <Head>
+            <title>NextJS</title>
+          </Head>
+          <Script
+            src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js'
+            strategy='afterInteractive'
+          />
+        </>
+      )
     }
-    export default MyApp
 
 To test a successful configuration, add the following snippet inside the `index.js` file:
 

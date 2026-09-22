@@ -34,9 +34,7 @@ I will be using [Apollo graphQL](https://www.apollographql.com/) to help queryin
 
 ## Hashnode API
 
-This article was originally written against Hashnode's older GraphQL playground endpoint and schema. If you are building a new integration today, use the current Hashnode GraphQL docs and endpoint linked below, and adapt the legacy query examples in this tutorial accordingly.
-
-[Current Hashnode GraphQL endpoint](https://gql.hashnode.com/)
+This article was originally written against Hashnode's older GraphQL playground endpoint and schema. If you are adapting it today, check the latest Hashnode GraphQL documentation before implementing the legacy query examples shown below.
 
 [Hashnode API docs](https://apidocs.hashnode.com/)
 

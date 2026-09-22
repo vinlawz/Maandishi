@@ -42,7 +42,7 @@ const Header = ({ head, description }) => {
 }
 ```
 
-(Don't worry, I'll explain the code 😄 [here](#destructuring))
+(Don't worry, I'll explain the code 😄 in the destructuring section below.)
 
 ## Creating a Prop
 
