@@ -103,6 +103,7 @@ const Layout = ({children}) => {
  return (
   <div>
     <NavigationBar />
+    {children}
     <Footer />
   </div>
  )

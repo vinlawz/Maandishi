@@ -188,10 +188,17 @@ function AccountContainer() {
       })
   }, [])
 
+  const handleAddTransaction = (createdTransaction) => {
+    setTransactions((currentTransactions) => [
+      ...currentTransactions,
+      createdTransaction,
+    ])
+  }
+
   return (
     <div>
       <Search />
-      <AddTransactionForm />
+      <AddTransactionForm onAddTransaction={handleAddTransaction} />
       <TransactionsList transaction={transactions} />
     </div>
   )
@@ -211,7 +218,7 @@ To add new transaction, I started with the `AddTransactionForm` component.
 ```js
 import React from "react";
 
-function AddTransactionForm() {
+function AddTransactionForm({ onAddTransaction }) {
   return (
     <div className="ui segment">
       <form className="ui form">
@@ -256,7 +263,9 @@ Then used state hooks to capture values, and create an event handler to send the
       body: JSON.stringify(newTransaction),
     })
       .then((resp) => resp.json())
-      .then((createdTransaction) => console.log(createdTransaction))
+      .then((createdTransaction) => {
+        onAddTransaction(createdTransaction)
+      })
   }
 ```
 

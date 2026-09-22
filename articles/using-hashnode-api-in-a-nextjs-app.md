@@ -278,7 +278,7 @@ Inside the top of the getStaticProps() function, let's create an instance of apo
 
 ```JavaScript
   const client = new ApolloClient({
-    uri: 'https://api.hashnode.com/',
+    uri: 'https://gql.hashnode.com/',
     cache: new InMemoryCache(),
   })
 ```
@@ -288,7 +288,7 @@ Our getStaticProps() function should now be like:
 ```JavaScript
 export async function getStaticProps(context) {
   const client = new ApolloClient({
-    uri: 'https://api.hashnode.com/',
+    uri: 'https://gql.hashnode.com/',
     cache: new InMemoryCache(),
   })
 
