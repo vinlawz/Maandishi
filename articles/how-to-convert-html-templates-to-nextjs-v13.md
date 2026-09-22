@@ -41,13 +41,13 @@ To start a new project, open up a command line application and run the script:
 
 *Note:* `my-portfolio` *can be replaced with the name of the project.*
 
-Note that we get some prompts for Next.JS configuration. A typical Next.js v13 setup flow looks like this:
+Note that we get some prompts for Next.JS configuration. For this walkthrough, choose **No** when asked about App Router so the generated project matches the `pages/` files used below:
 
 ```bash
     ✔ Would you like to use TypeScript with this project? … No / Yes
     ✔ Would you like to use ESLint with this project? … No / Yes
     ✔ Would you like to use src/ directory with this project? … No / Yes
-    ✔ Would you like to use App Router? (recommended) … No / Yes
+    ✔ Would you like to use App Router? (recommended) … No
     ✔ What import alias would you like configured? … @/*
 ```
 

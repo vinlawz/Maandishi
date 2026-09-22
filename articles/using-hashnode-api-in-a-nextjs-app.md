@@ -34,9 +34,11 @@ I will be using [Apollo graphQL](https://www.apollographql.com/) to help queryin
 
 ## Hashnode API
 
-Hashnode API used graphQL. It's pretty and fast in getting data. 
+Hashnode's API uses GraphQL, and the current endpoint for queries is `https://gql.hashnode.com/`. You can explore the schema and examples in the official Hashnode API docs.
 
-[Hashnode API Playground](https://api.hashnode.com/)
+[Hashnode GraphQL endpoint](https://gql.hashnode.com/)
+
+[Hashnode API docs](https://apidocs.hashnode.com/)
 
 ![Hashnode API Playground Image](https://cdn.hashnode.com/res/hashnode/image/upload/v1623745369823/-0-Glxxo9.png)
 

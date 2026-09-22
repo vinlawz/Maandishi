@@ -91,24 +91,7 @@ Install `sass` by running:
 
     npm install sass
 
-After that, you need to add the path to where the `.scss` files are. Add the following to the `next.config.js` file:
-
-      sassOptions: {
-        includePaths: [path.join(__dirname, 'styles')],
-      },
-
-The updated `next.config.js` file:
-
-    const path = require('path')
-
-    module.exports = {
-      reactStrictMode: true,
-      sassOptions: {
-        includePaths: [path.join(__dirname, 'styles')],
-      },
-    }
-
-Next, inside the styles directory, create a new scss file: `customBootstrap.scss,` and add the following:
+After that, you can keep the default Next.js styles directory and create a new SCSS file named `customBootstrap.scss` inside `styles/` with the following content:
 
     $theme-colors: (
       'primary': #093ea8,
@@ -120,7 +103,7 @@ Next, inside the styles directory, create a new scss file: `customBootstrap.scss
       'light': #c0ccda,
       'dark': #000103,
     );
-    @import '/node_modules/bootstrap/scss/bootstrap.scss';
+    @import 'bootstrap/scss/bootstrap';
 
 By using `$theme-colors` you override bootstrap default values. 
 

@@ -61,13 +61,13 @@ Choose to connect with your application (drivers) and go to option number 3:
 Copy the connection string and replace the placeholder values with your own database credentials.
 
 ```plaintext
-mongodb+srv://<username>:<password>@example-cluster.mongodb.net/?retryWrites=true&w=majority
+mongodb+srv://<username>:<password>@example-cluster.mongodb.net/<database-name>?retryWrites=true&w=majority
 ```
 
 Save the string inside a `.env` file:
 
 ```plaintext
-MONGO_URI=mongodb+srv://<username>:<password>@example-cluster.mongodb.net/?retryWrites=true&w=majority
+MONGO_URI=mongodb+srv://<username>:<password>@example-cluster.mongodb.net/<database-name>?retryWrites=true&w=majority
 ```
 
 **Connecting Mongo to NodeJs Application:**

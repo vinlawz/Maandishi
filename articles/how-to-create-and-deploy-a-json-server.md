@@ -129,24 +129,8 @@ The following images show the GET and POST methods:
 
 After POST.ing new data, the `db.json` files update the latest entry.
 
-## Deploying to cyclic.sh
+## Deployment Note
 
-Create an account at cyclic.sh (link account to your GitHub profile). Then upload the mock server to [GitHub](https://github.com/achingachris/yelpme-json-server).
+The original article used Cyclic for deployment, but that platform is no longer available for app hosting. If you want to publish the mock server today, push the repository to GitHub and deploy it on a currently supported Node.js platform such as Render, Railway, or Fly.io, then follow that provider's steps for running a `json-server` process.
 
-To deploy on cyclic, click the green deploy button on the dashboard:
-
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1666107972211/f1yCbvsh6.png align="left")
-
-Select the `Link Your Own` tab to select from GitHub:
-
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1666108043995/iwrmCCa4f.png align="left")
-
-Search for the repo and click connect:
-
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1666108156132/vBT-zszlJ.png align="left")
-
-After a successful deployment:
-
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1666108746193/H_BbeXEZG.png align="left")
-
-Just like that you have your simple server/API ready for use!
+Once the deployment is complete, your simple mock API will be ready for use.
