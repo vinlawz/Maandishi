@@ -14,9 +14,9 @@ WordPress is known for its user-friendly interface, extensive customization opti
 
 There are two main versions of WordPress:
 
-1. [WordPress.org](http://WordPress.org): This is the self-hosted version, where you can download the WordPress software for free and install it on your web server. It gives you complete control over your website, including using custom themes and plugins.
+1. [WordPress.org](https://wordpress.org): This is the self-hosted version, where you can download the WordPress software for free and install it on your web server. It gives you complete control over your website, including using custom themes and plugins.
     
-2. [WordPress.com](http://WordPress.com): This is a hosted version where your website is hosted on [WordPress.com](http://WordPress.com)'s servers. It's easier to set up and requires less technical knowledge, but there are limitations on customization and the use of plugins.
+2. [WordPress.com](https://wordpress.com): This is a hosted version where your website is hosted on [WordPress.com](https://wordpress.com)'s servers. It's easier to set up and requires less technical knowledge, but there are limitations on customization and the use of plugins.
     
 
 In both versions, users can create and manage content using the WordPress dashboard, a web-based interface allowing easy content creation, editing, and organization.
@@ -28,7 +28,7 @@ In both versions, users can create and manage content using the WordPress dashbo
 
 ## Downloading WordPress
 
-\[WordPress\](https://wordpress.org/is an open-source CMS (Content Management System), it's available for free. To download the installation files, head over to https://wordpress.org/download/.
+[WordPress](https://wordpress.org) is an open-source CMS (Content Management System), and it is available for free. To download the installation files, head over to <https://wordpress.org/download/>.
 
 Follow the following steps to install and start using WordPress locally:
 

@@ -36,19 +36,19 @@ npm install gh-pages --save-dev
 In the `package.json` file in your react app and add homepage property using the given syntax:
 
 ```shell
-http://{username}.github.io/{repo-name}
+https://{username}.github.io/{repo-name}
 ```
 
 Where {username} is your GitHub username, and {repo-name} is the name of the GitHub repository. Below is an example for my project:
 
 ```JSON
-"homepage": "http://achingachris.github.io/myRepos",
+"homepage": "https://achingachris.github.io/myRepos",
 ```
 
 ```JSON
 {
   "name": "myrepos",
-  "homepage": "http://achingachris.github.io/myRepos",
+  "homepage": "https://achingachris.github.io/myRepos",
   "version": "0.1.0",
   "private": true,
 }

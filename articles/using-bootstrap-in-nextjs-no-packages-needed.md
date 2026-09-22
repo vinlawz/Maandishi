@@ -12,9 +12,6 @@ Usually, you'll need to install third-party packages like  [react-bootstrap](htt
 
 The updated  [NextJS](https://nextjs.org/docs)  version has made it possible to use Bootstrap with react without necessarily installing 3rd party packages, which would rather make your app heavy and slow. Here is how to do it:
 
-First of all, you'll need to be using NextJS version 11.
-
-<https://nextjs.org/conf>
 To enjoy all that bootstrap has to offer, you have to use both CSS and JS files from both. On bootstrap's home page, there are the CDN links to bootstrap CSS and JS files.
 
 NextJS has the **Head** and **Script** components that let us use the CDN directly without any configuration.

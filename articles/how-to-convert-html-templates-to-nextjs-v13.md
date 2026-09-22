@@ -41,13 +41,13 @@ To start a new project, open up a command line application and run the script:
 
 *Note:* `my-portfolio` *can be replaced with the name of the project.*
 
-Note that we get some prompts for Next.JS configuration. The wording below came from an earlier `create-next-app` release, where the `app/` directory was still labeled as experimental:
+Note that we get some prompts for Next.JS configuration. A typical Next.js v13 setup flow looks like this:
 
 ```bash
     ✔ Would you like to use TypeScript with this project? … No / Yes
     ✔ Would you like to use ESLint with this project? … No / Yes
     ✔ Would you like to use src/ directory with this project? … No / Yes
-    ✔ Would you like to use experimental app/ directory with this project? … No / Yes
+    ✔ Would you like to use App Router? (recommended) … No / Yes
     ✔ What import alias would you like configured? … @/*
 ```
 

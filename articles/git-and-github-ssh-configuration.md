@@ -50,7 +50,7 @@ This will prompt you to enter a location to save the key and create a password t
 After this, you’ll need to copy the key to the clipboard. Use the command below to view the ssh key in a human-readable format:
 
 ```bash
-cat < ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub
 ```
 
 ![key.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1620758991329/Q3VOjCzPb.png align="left")
